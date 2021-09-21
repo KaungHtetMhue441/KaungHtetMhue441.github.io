@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.css" type="text/css" media="screen" />
+</head>
+<body>
+  
+  <a class="venobox"href="img/content-1.svg"><img src="img/content-1.svg" alt="image alt"/> <img src="img/favicon.ico" alt="" srcset=""></a>
+  <a class="venobox_custom" data-vbtype="iframe" href="http://example.com/">open iFrame</a>
+<button class="hello ">hello</button>
+  <script>
+    $(document).ready(function(){
+    $('.venobox').venobox(); 
+});
+
+$("#firstlink").venobox().trigger('click');
+
+    $('.venobox_custom').venobox({
+    framewidth : '400px',                            // default: ''
+    frameheight: '300px',                            // default: ''
+    border     : '10px',                             // default: '0'
+    bgcolor    : '#5dff5e',                          // default: '#fff'
+    titleattr  : 'data-title',                       // default: 'title'
+    numeratio  : true,                               // default: false
+    infinigall : true,                               // default: false
+    share      : ['facebook', 'twitter', 'download'] // default: []
+});
+
+$('.hello').click(function(){
+  alert('hello')
+})
+  </script>
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active text-uppercase text-white font-weight-bolder" aria-current="page" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  text-uppercase text-white font-weight-bolder" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-uppercase  text-white font-weight-bolder" href="#services"  >
+          services
+        </a>
+    
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  text-uppercase text-white font-weight-bolder" href="#contact">Contact Us</a>
+      </li>
+    </ul>
+  </div> -->
+

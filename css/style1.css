@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,100;1,400;1,500&display=swap');
+*{
+
+}
+html{
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+   
+}
+.site-nav{
+    position:absolute;
+    top: 0;
+    z-index: 1000;
+   
+}
+.home{
+    background-image: url(../img/bg-shape.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50%;
+}
+.logo-long{
+    height: 60px!important;
+}
+.home-text{
+    font-weight: bolder;
+}
+
+.about{
+    background-color: #7E76F910;
+}
+
+.services{
+    background-image: url("../img/bg-3.svg");
+    background-size: 100%;
+    background-position: center;
+}
+.services-card{
+    border-radius: 35px !important;
+    border:none !important;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.05) !important;
+    transition: 0.5s;
+}
+.services-card:hover{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    transform: scale(0.98);
+}
+.services-card:hover img{
+    transform: translateX(20px);
+}
+.contact{
+    background-image: url("../img/footer-2.svg"),url("../img/footer-1.svg");
+    background-size: auto 80%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: black!important;
+    /* background-attachment: fixed; */
+}
+.site-nav-scroll{
+
+    position: sticky;
+    backdrop-filter: opacity(o.1rem)!important;
+    background-color: #ddd4d4;
+    opacity: 3px!important;
+    box-shadow: 0 0 5px #c5c3c320;
+    animation: toShow 1s linear;
+}
+.footer{
+    padding-top: 150px;
+}
+
+.vh-90{
+    height: 90vh;
+}
+.vh-10{
+    height: 10vh;
+}
+.vh-80{
+    height: 80vh;
+}
+.vh-30{
+    height: 20vh;
+}
+.vh-60{
+    height: 60vh;
+}
+.vh-40{
+    height: 40vh;
+}
+@media screen and (max-width:780px) {
+    .site-nav{
+        position: absolute;
+    }
+    .home-text{
+
+        text-align: center;
+    }
+    .home-buttom{
+        width: 150px;
+        margin-left:100px;
+        
+    }
+    .content-2,.content-2-text{
+        width: 100% !important;
+    }
+
+}
