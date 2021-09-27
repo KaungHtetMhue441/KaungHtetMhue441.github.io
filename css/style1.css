@@ -105,5 +105,8 @@ body{
     .content-2,.content-2-text{
         width: 100% !important;
     }
+    .vh-sm-100{
+        height: 100vh!important;
+    }
 
 }
